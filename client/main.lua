@@ -24,7 +24,7 @@ end
 RegisterNetEvent('strez:client:SendMailTsunamiCustom', function(text)
     TriggerEvent('InteractSound_CL:PlayOnOne', 'Alert', 0.5)
     Wait(math.random(7000, 13000))
-    TriggerServerEvent('qb-phone:server:sendNewMail', {
+    TriggerServerEvent('gksphone:server:sendNewMail', {
         sender = "District of Los Santos",
         subject = "Emergency Broadcast",
         message = text,
@@ -38,7 +38,7 @@ end)
 RegisterNetEvent('strez:client:SendMailTsunamiManual', function(text)
     TriggerEvent('InteractSound_CL:PlayOnOne', 'Alert', 0.5)
     Wait(math.random(7000, 13000))
-    TriggerServerEvent('qb-phone:server:sendNewMail', {
+    TriggerServerEvent('gksphone:server:sendNewMail', {
         sender = 'District of Los Santos',
         subject = 'Emergency Broadcast',
         message = 'The National Weather Service has issued a TSUNAMI WARNING for Los Santos, In 15 minutes! Please start heading home or somewhere local for SAFETY!',
@@ -57,7 +57,7 @@ end)
 RegisterNetEvent('strez:client:SendMailTsunamiAuto15', function(text)
         TriggerEvent('InteractSound_CL:PlayOnOne', 'Alert', 0.5)
         Wait(math.random(7000, 13000))
-        TriggerServerEvent('qb-phone:server:sendNewMail', {
+        TriggerServerEvent('gksphone:server:sendNewMail', {
             sender = 'District of Los Santos',
             subject = 'Emergency Broadcast',
             message = 'The National Weather Service has issued a TSUNAMI WARNING for Los Santos, In 15 minutes! Please start heading home or somewhere local for SAFETY!',
@@ -74,7 +74,7 @@ RegisterNetEvent('strez:client:SendMailTsunamiAuto5', function(text)
     Wait(math.random(7000, 13000))
     Wait(35000)
 	TriggerEvent('InteractSound_CL:PlayOnOne', 'raidsiren', 0.1)
-    TriggerServerEvent('qb-phone:server:sendNewMail', {
+    TriggerServerEvent('gksphone:server:sendNewMail', {
         sender = 'District of Los Santos',
         subject = 'Emergency Broadcast',
         message = 'The National Weather Service has issued a TSUNAMI WARNING for Los Santos, In 5 minutes! Los Santos is losing City Power, Please start heading home or somewhere local for SAFETY!',
@@ -89,7 +89,7 @@ end)
 RegisterNetEvent('strez:client:SendMailTsunamiAuto1', function(text)
     TriggerEvent('InteractSound_CL:PlayOnOne', 'Alert', 0.5)
     Wait(math.random(7000, 13000))
-    TriggerServerEvent('qb-phone:server:sendNewMail', {
+    TriggerServerEvent('gksphone:server:sendNewMail', {
         sender = 'District of Los Santos',
         subject = 'Emergency Broadcast',
         message = 'The National Weather Service has issued a TSUNAMI WARNING for Los Santos, In 1 minutes! Please start heading home or somewhere local for SAFETY!',
